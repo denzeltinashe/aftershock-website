@@ -3,7 +3,7 @@
 import React, { useState, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import { Smooch_Sans } from "@next/font/google";
+import { Smooch_Sans } from "next/font/google";
 import { HeroHighlight, Highlight } from "@/app/components/ui/HeroHighlight"; // Update the path as necessary
 
 const smoochSans = Smooch_Sans({
