@@ -1,10 +1,4 @@
 /** @type {import('next').NextConfig} */
+const nextConfig = {};
 
-const nextConfig = {
-    experimental: {
-      fontLoaders: [],
-    },
-  };
-  
-  module.exports = nextConfig;
-  export default nextConfig;
+export default nextConfig;
