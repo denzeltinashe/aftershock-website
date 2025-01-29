@@ -108,7 +108,7 @@ function TextRevealSection() {
           Discover the Heart of Aftershock
         </TextRevealCardTitle>
         <TextRevealCardDescription>
-          Hover over the card to reveal what makes Aftershock unique. If on mobile, press the last letter in the phrase below.
+          Hover over the card to reveal what makes Aftershock unique ;) If you're on mobile, press the last letter in the phrase below.
         </TextRevealCardDescription>
       </TextRevealCard>
     </section>
@@ -486,7 +486,7 @@ function CarouselSection() {
     {
       category: "Bible Study",
       title: "Every Thursday @ 7 PM | Woolsey Hall AGH Conference Room",
-      src: "/carousel1.jpg",
+      src: "/image1.jpg",
       content: (
         <p>
           Join us for Bible Study every Thursday evening! Dive deep into the Word of God, engage in meaningful discussions, and grow in your faith alongside a vibrant community of students.
@@ -496,7 +496,7 @@ function CarouselSection() {
     {
       category: "FPC Shuttle",
       title: "Pickups for Everyone On and Around WSU Campus",
-      src: "/carousel2.jpg",
+      src: "/image2.jpg",
       content: (
         <p>
           Enjoy free shuttle service provided for WSU students and faculty. Convenient pickups are available on and around the campus to make your commute easier and stress-free.
@@ -506,7 +506,7 @@ function CarouselSection() {
     {
       category: "Ambassador Program",
       title: "Serve God and Join Outreach",
-      src: "/carousel3.jpg",
+      src: "/image3.jpg",
       content: (
         <p>
           Be a part of our Ambassador Program and take a step towards serving God and spreading His Word. Join us in community outreach initiatives to make a lasting impact.
@@ -516,7 +516,7 @@ function CarouselSection() {
     {
       category: "Worship Night",
       title: "Nights of Worship and Intercession",
-      src: "/carousel4.jpg",
+      src: "/image4.jpg",
       content: (
         <p>
           Experience powerful nights of worship and prayer! Join us as we lift our voices in praise and intercede for our campus and community in the presence of God.
