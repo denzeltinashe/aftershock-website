@@ -114,6 +114,19 @@ function TextRevealSection() {
     </section>
   );
 }
+function BlobBackground({ children }) {
+  return (
+    <div className="relative overflow-hidden">
+      {/* Blobs */}
+      <div className="absolute -top-20 -left-20 h-[30rem] w-[30rem] bg-orange-500 blur-[200px] opacity-50 z-0" />
+      <div className="absolute bottom-10 right-10 h-[25rem] w-[25rem] bg-indigo-500 blur-[200px] opacity-50 z-0" />
+      <div className="absolute top-1/2 left-1/3 h-[20rem] w-[20rem] bg-yellow-500 blur-[200px] opacity-50 z-0 transform -translate-y-1/2 -translate-x-1/2" />
+
+      {/* Main Content */}
+      <div className="relative z-10">{children}</div>
+    </div>
+  );
+}
 
 function AboutMissionSection() {
   return (
