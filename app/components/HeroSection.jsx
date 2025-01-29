@@ -72,17 +72,35 @@ const OverlayContent = ({ logoSrc }) => {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = async (e) => {
+    console.log("sending email...")
+    e.preventDefault(); // Prevent default form submission
     if (email) {
-      setSubmitted(true);
-      setTimeout(() => {
-        setSubmitted(false);
-        setEmail("");
-      }, 3000);
+      try {
+        const response = await fetch("/api/sendEmail", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email }), // Pass email to API
+        });
+        console.log("response: ", response)
+        if (response.ok) {
+          setSubmitted(true);
+          setTimeout(() => {
+            setSubmitted(false);
+            setEmail(""); // Clear email field
+          }, 3000);
+        } else {
+          console.error("Failed to send email");
+        }
+      } catch (error) {
+        console.error("Error:", error);
+      }
     }
   };
-
+  
+  
   return (
     <div className="absolute inset-0 flex h-screen w-full flex-col items-center justify-center text-center space-y-4 translate-y-[-10%]">
       {/* Logo */}
